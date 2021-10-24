@@ -22,16 +22,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let sliderMinValue: Float = 0
-        let sliderMaxValue: Float = 1
-        
-        redSlider.minimumValue = sliderMinValue
-        redSlider.maximumValue = sliderMaxValue
-        greenSlider.minimumValue = sliderMinValue
-        greenSlider.maximumValue = sliderMaxValue
-        blueSlider.minimumValue = sliderMinValue
-        blueSlider.maximumValue = sliderMaxValue
-        
         redSlider.value = 0.000
         greenSlider.value = 0.000
         blueSlider.value = 0.000
@@ -39,29 +29,26 @@ class ViewController: UIViewController {
         redSliderLabel.text = "0.000"
         greenSliderLabel.text = "0.000"
         blueSliderLabel.text = "0.000"
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
+        
         viewRGB.layer.cornerRadius = 20
     }
-    
-    @IBAction func redSliderAction(_ sender: Any) {
+
+    @IBAction func redSliderAction() {
         redSliderLabel.text = String(format: "%.3f", redSlider.value)
         setViewColor()
     }
     
-    @IBAction func greenSliderAction(_ sender: Any) {
+    @IBAction func greenSliderAction() {
         greenSliderLabel.text = String(format: "%.3f", greenSlider.value)
         setViewColor()
     }
     
-    @IBAction func blueSliderAction(_ sender: Any) {
+    @IBAction func blueSliderAction() {
         blueSliderLabel.text = String(format: "%.3f", blueSlider.value)
         setViewColor()
     }
     
-    func setViewColor() {
+    private func setViewColor() {
         viewRGB.backgroundColor = UIColor(
             cgColor: CGColor(red: CGFloat((redSlider.value)),
                              green: CGFloat((greenSlider.value)),
