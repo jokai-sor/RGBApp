@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		C199437F2722A44B00EAA3B4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C199437E2722A44B00EAA3B4 /* AppDelegate.swift */; };
 		C19943812722A44B00EAA3B4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19943802722A44B00EAA3B4 /* SceneDelegate.swift */; };
-		C19943832722A44B00EAA3B4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19943822722A44B00EAA3B4 /* ViewController.swift */; };
+		C19943832722A44B00EAA3B4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19943822722A44B00EAA3B4 /* SettingsViewController.swift */; };
 		C19943862722A44B00EAA3B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19943842722A44B00EAA3B4 /* Main.storyboard */; };
 		C19943882722A44C00EAA3B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C19943872722A44C00EAA3B4 /* Assets.xcassets */; };
 		C199438B2722A44C00EAA3B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C19943892722A44C00EAA3B4 /* LaunchScreen.storyboard */; };
+		C1CB587F2736DCE900758B04 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1CB587E2736DCE900758B04 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C199437B2722A44B00EAA3B4 /* RGBApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RGBApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C199437E2722A44B00EAA3B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C19943802722A44B00EAA3B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C19943822722A44B00EAA3B4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C19943822722A44B00EAA3B4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		C19943852722A44B00EAA3B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C19943872722A44C00EAA3B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C199438A2722A44C00EAA3B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C199438C2722A44C00EAA3B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1CB587E2736DCE900758B04 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				C199437E2722A44B00EAA3B4 /* AppDelegate.swift */,
 				C19943802722A44B00EAA3B4 /* SceneDelegate.swift */,
-				C19943822722A44B00EAA3B4 /* ViewController.swift */,
+				C1CB587E2736DCE900758B04 /* MainViewController.swift */,
+				C19943822722A44B00EAA3B4 /* SettingsViewController.swift */,
 				C19943842722A44B00EAA3B4 /* Main.storyboard */,
 				C19943872722A44C00EAA3B4 /* Assets.xcassets */,
 				C19943892722A44C00EAA3B4 /* LaunchScreen.storyboard */,
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C19943832722A44B00EAA3B4 /* ViewController.swift in Sources */,
+				C19943832722A44B00EAA3B4 /* SettingsViewController.swift in Sources */,
 				C199437F2722A44B00EAA3B4 /* AppDelegate.swift in Sources */,
 				C19943812722A44B00EAA3B4 /* SceneDelegate.swift in Sources */,
+				C1CB587F2736DCE900758B04 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
