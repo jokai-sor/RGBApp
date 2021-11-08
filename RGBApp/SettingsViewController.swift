@@ -28,6 +28,10 @@ class SettingsViewController: UIViewController {
         
         viewRGB.layer.cornerRadius = 20
         viewRGB.backgroundColor = currentColor
+        
+        redSlider.value = Float(CGFloat(currentColor.ciColor.red))
+        blueSlider.value = Float(CGFloat(currentColor.ciColor.blue))
+        greenSlider.value = Float(CGFloat(currentColor.ciColor.green))
     }
 
     @IBAction func redSliderAction() {
@@ -61,10 +65,10 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func saveButtonPressed() {
-//        view.endEditing(true)
+        //        view.endEditing(true)
         delegate.setNewColor(for: currentColor)
-        self.navigationController?.popViewController(animated: true)
-        
+        dismiss(animated: true)
     }
+    
 }
 
